@@ -43,7 +43,9 @@ function criaLista(){
 
 function editar(i){
     document.getElementById("dados").value = dadosLista[(i - 1)];
+    document.getElementById("CPF").value = dadosLista[(i - 1)];
     dadosLista.splice(dadosLista[(i-1), 1]);
+    CPFs.splice(CPFs[(i-1), 1]);
 }
 // FUNCAO PARA EXCLUIR NOME
 
